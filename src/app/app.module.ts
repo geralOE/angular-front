@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { TeamsComponent } from './components/teams/teams.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { DetailTeamComponent } from './components/teams/detail-team/detail-team.component';
+import { MembersComponent } from './components/members/members.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DetailTeamComponent } from './components/teams/detail-team/detail-team.
     NavbarComponent,
     TeamsComponent,
     PageNotFoundComponent,
-    DetailTeamComponent
+    DetailTeamComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
