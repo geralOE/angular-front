@@ -10,6 +10,8 @@ import { TeamsComponent } from './components/teams/teams.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { DetailTeamComponent } from './components/teams/detail-team/detail-team.component';
 import { MembersComponent } from './components/members/members.component';
+import { AddMemberComponent } from './components/members/add-member/add-member.component';
+import { AddTeamComponent } from './components/teams/add-team/add-team.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MembersComponent } from './components/members/members.component';
     TeamsComponent,
     PageNotFoundComponent,
     DetailTeamComponent,
-    MembersComponent
+    MembersComponent,
+    AddMemberComponent,
+    AddTeamComponent
   ],
   imports: [
     BrowserModule,
