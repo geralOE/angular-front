@@ -9,11 +9,12 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const routes: Routes = [
   { path: 'teams', component: TeamsComponent },
   { path: 'teams/add', component: AddTeamComponent },
+  { path: 'teams/members/add', component: AddMemberComponent },
   { path: 'members', component: MembersComponent },
   { path: 'members/add', component: AddMemberComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'teams' },
+  { path: '*', component: PageNotFoundComponent },
 ];
-//{ path: '**', component: PageNotFoundComponent },
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

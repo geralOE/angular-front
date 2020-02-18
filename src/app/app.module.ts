@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -12,6 +14,9 @@ import { DetailTeamComponent } from './components/teams/detail-team/detail-team.
 import { MembersComponent } from './components/members/members.component';
 import { AddMemberComponent } from './components/members/add-member/add-member.component';
 import { AddTeamComponent } from './components/teams/add-team/add-team.component';
+
+import { MembersService } from './services/members.service';
+import { TeamsService } from './services/teams.service';
 
 @NgModule({
   declarations: [
@@ -27,8 +32,12 @@ import { AddTeamComponent } from './components/teams/add-team/add-team.component
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    TeamsService,
+    MembersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

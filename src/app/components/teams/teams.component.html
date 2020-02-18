@@ -6,13 +6,13 @@
       <th>Acciones</th>
     </tr>
 
-    <tr>
-      <td>Muestra</td>
-      <td class="alertDelete">
-        <button class="btn btn-outline-info my-2"><i class="fas fa-trash"></i> </button>
-        <button class="btn btn-outline-info my-2"><i class="fas fa-edit"></i></button>
-        <button class="btn btn-outline-info my-2"><i class="fas fa-list"></i></button>
-        <button class="btn btn-outline-info my-2"><i class="fas fa-plus"></i>Agregar miembros</button>
+    <tr *ngFor="let t of allTeams">
+      <td>{{t.team_name}}</td>
+      <td>
+        <button  routerLink='' class="btn btn-outline-info my-2"><i class="fas fa-trash"></i> </button>
+        <button  routerLink='' class="btn btn-outline-info my-2"><i class="fas fa-edit"></i></button>
+        <button  routerLink='' class="btn btn-outline-info my-2"><i class="fas fa-list"></i></button>
+        <button  routerLink='/teams/member/add' class="btn btn-outline-info my-2"><i class="fas fa-plus"></i>Agregar miembros</button>
       </td>
     </tr>
   </table>

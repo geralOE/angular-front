@@ -3,12 +3,14 @@
   <table class="table is-full" style="width: 100%">
     <tr>
       <th>Miembro</th>
+      <th>Team</th>
       <th>Acciones</th>
     </tr>
 
-    <tr>
-      <td>Muestra</td>
-      <td class="alertDelete">
+    <tr *ngFor="let m of allMembers">
+      <td>{{m.member_name}}</td>
+      <td>{{m.team_id}}</td>
+      <td>
         <button class="btn btn-outline-info my-2"><i class="fas fa-trash"></i></button>
         <button class="btn btn-outline-info my-2"><i class="fas fa-edit"></i></button>
         <button class="btn btn-outline-info my-2"><i class="fas fa-list"></i></button>
